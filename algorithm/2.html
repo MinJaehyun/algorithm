@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>삼각형 판별하기</title>
+</head>
+<body>
+  <script>
+    function solution(a,b,c){
+      let maxNumber;
+      a < b ? maxNumber = b : maxNumber = a;
+      if (b < c){
+        maxNumber = c;
+      } 
+      let sumTwoSides = a + b + c - maxNumber;
+      sumTwoSides <= maxNumber ? answer="NO" : answer="YES"
+      
+      console.log(answer); 
+      return answer;
+    }
+    solution(6,1,13)
+  </script>
+</body>
+</html>
+
+<!-- 특징:
+1. 가장 긴 변과 나머지 두 변의 합과 같으면 일직선으로 두 개의 선을 나타낸다. 
+2. 세 변 중 가장 긴 변을 구하고, 나머지 두 변의 합이 가장 긴 변보다 작을 때, 삼각형의 조건이 성립된다.
+-->
