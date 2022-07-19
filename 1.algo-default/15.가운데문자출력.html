@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+</head>
+<body>
+  <script>
+    function solution(str){
+      if (str.length % 2 === 0) {
+        // 짝수
+        return str.slice((str.length / 2) - 1, (str.length / 2) + 1);
+      } else {
+        // 홀수
+        return str.slice((str.length / 2), (str.length / 2) + 1);
+      }
+    }
+
+    const str1 = 'stu1234dy'; 
+    const str2 = 'g1234d'; 
+    console.log(solution(str1));
+    console.log(solution(str2));
+  </script>  
+</body>
+</html>

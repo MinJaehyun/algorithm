@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+</head>
+<body>
+  <script>
+    function solution(arr){
+      let maxLength = arr[1].length; // err
+
+      arr.filter((cur) => {
+        if (maxLength < cur.length) {
+          maxLength = cur.length;
+        }
+      })
+      return maxLength;
+    }
+
+    const arr = [5, 'teacher', 'time', 'student', 'beautiful', 'good'];
+    console.log(solution(arr));
+  </script>
+</body>
+</html>

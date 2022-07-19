@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+</head>
+
+<body>
+  <script>
+    function solution(arr){
+      const newArr = [];
+      const answer = [];
+
+      for(let x of [...arr]) {
+        newArr.push(Number(String(x).split('').reverse().join('')));
+      }
+
+      for(let i=0; i<newArr.length; i++){ 
+        let cnt = 0;
+        for(let j=1; j<=newArr[i]; j++){ 
+          if(newArr[i] % j === 0) cnt += 1;
+        }
+        if (cnt === 2) answer.push(newArr[i]);
+      }
+      return answer;
+    } 
+    
+    const arr = [32,55,62,20,250,370,200,30,100];
+    console.log(solution(arr));
+    // console.log(arr);
+  </script>
+</body>
+</html>
+<!-- 뒤집은 숫자가 소수이면 나타낸다.
+1. 배열에 각 숫자를 문자열로 만든다
+['32','55','62','20','250','370','200','30','100']
+
+2. 배열 안에 각각의 문자를 돌면서 역순으로 만든다
+['23','55','26'..., '001']
+
+3. 문자열을 숫자로 형변한
+[23,55,26..., 1]
+
+* 앞에 0 은 제거한다
+['001'] 는 ['1'] 로 처리한다. (그냥 Number 처리하면 해결됨)
+ 
+4. 배열 안에 각각의 숫자가 소수인지 판별하고,
+1 과 자기자신의 수를 가지면 cnt 를 증가시키며 담는다.
+
+5. 소수이면 새배열에 담는다.
+6. 위 새배열을 반환 한다.
+ -->

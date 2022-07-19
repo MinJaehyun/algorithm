@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>find vs filter</title>
+</head>
+<body>
+  <script>
+    const obj = [
+      { name: 'mjh', age: 20 },
+      { name: 'pms', age: 20 }
+    ];
+
+    const age = obj.filter((user) => {
+      return user.age > 19
+    })
+
+    // filter 로는 객체안에 속성만을 가져올 수 없어서, map 을 통해 처리
+    const age2 = obj.map((user) => {
+      if (user.age > 19) {
+        return user.age
+      }
+    })    
+
+    console.log(age2);
+  </script>
+</body>
+</html>
+
+<!-- 핵심:
+1. filter 는 배열에만 사용할 수 있다.
+2. [{}, {}] 의 타입도 배열이므로 filter 를 적용할 수 있다.
+3. filter 는 true 값 전체를 반환한다. 
+4. find 는 true 값 한개를 반환한다.
+-->

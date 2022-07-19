@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+</head>
+<body>
+  <script>
+    function solution(str, char){
+      const strArr = str.split('');
+      return strArr.filter((curr) => {
+        return curr === char
+      }).length;      
+    }
+
+    const str = 'COMPUTERPROGRAMMING';
+    const char = 'R';
+    console.log(solution(str, char));
+  </script>  
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    function solution(str, characters){
+      const newArr = str.split('');
+      let answer = [];
+      
+      newArr.map((curr) => {
+        if (curr === characters){
+          answer.push('#');
+        } else {
+          answer.push(curr);
+        }
+      })
+      return answer.join('');
+    }
+
+    const str = 'BANANA';
+    const characters = 'A';  
+    console.log(solution(str, characters));
+  </script>
+</body>
+</html>

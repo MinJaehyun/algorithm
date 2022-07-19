@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+</head>
+<body>
+  <script>
+    function solution(arr){
+      const newArr = [...arr];
+      let onlyWord = [];
+      
+      newArr.filter((cur) => {
+        if (!onlyWord.includes(cur)) {
+          onlyWord.push(cur);
+        }
+      })
+      return onlyWord;
+    }
+
+    const arr = ['good', 'time', 'good', 'time', 'student']
+    console.log(solution(arr));
+  </script>  
+</body>
+</html>
+<!-- 중복된 단어의 개수? -->

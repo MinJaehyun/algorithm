@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<body>
+  <script>
+  function solution(arr = [87, 89, 92, 100, 76]) {
+    const arr_ = arr.map((i) => arr.filter((j) => i < j).length + 1);
+    console.log(arr_);
+  }
+  </script>
+</body>
+</html>
+이중for문을 A.M 으로 리펙토링하는 방법
+map 는 단순히 반복하여 새배열 반환하기 위해 사용하고,
+filter 로 반복하여 값을 비교하고 큰값의 길이를 반환한다.
+큰값 3개를 filter 를 통해 새배열에 담고, 길이를 재서 + 1 한다
