@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+<script>
+    // 1. 함수 호출
+    var foo = function () {
+        console.dir(this);
+    };
+    foo(); // 함수 안에 this 는 window 를 가리킨다.
+    // window.foo();
+
+
+    // 2. 메소드 호출
+    var obj = { foo: foo };
+    obj.foo(); // obj         // foo: function(): void 를 호출한다.
+
+    // var obj2 = { foo: 'foo' };
+    // console.log(obj2.foo); // 'foo'      // 객체의 값을 가져온다
+
+    // 3. 생성자 함수 호출
+    var instance = new foo(); // instance
+    console.log('instance: ', instance)
+
+    // 4. apply/call/bind 호출
+    var bar = { name: 'bar' };
+    foo.call(bar);   // bar
+    foo.apply(bar);  // bar
+    foo.bind(bar)(); // bar
+</script>
+</body>
+</html>
