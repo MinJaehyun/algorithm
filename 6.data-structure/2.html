@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="UTF-8">
+</head>
+
+<body>
+  <script>
+    function solution(str) {
+      const newArr = [...str];
+      let stack = [];
+      let test = [];
+
+      for(let x of newArr) {
+        if(x === ')' ){ // || stack.length === 0
+          // 길이가 0 이면? 
+          while(x !== '(') {
+            stack.pop();
+          }
+        }
+        else if(x === '(' || typeof x === 'string') {
+          stack.push(x);
+        }        
+      }
+      return stack;
+    }
+
+    const str = '(A(BC)D)EF(G(H)(IJ)K)LM(N)';
+    console.log(solution(str)); // answer: EFLM
+  </script>
+</body>
+
+</html> 
+<!-- 1755~1825. 30 -->
+<!-- 
+  1. '(' 또는 typeof string 이면, push 한다
+  2. ')' 이거나 길이가 0 이면,
+ -->
