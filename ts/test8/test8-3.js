@@ -2,7 +2,7 @@
     let cutZero = (a) => {
         let newArr = Array.from(a);
         let answer = '';
-        return newArr[0] === '0' ? answer = newArr.slice(1).join('') : null;
+        return newArr[0] === '0' ? answer = newArr.slice(1).join('') : '';
     };
     let removeDash = (b) => {
         let answer = +(b.split('-').join(''));
