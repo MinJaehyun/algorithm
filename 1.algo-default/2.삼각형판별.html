@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+</head>
+<body>
+  <script>
+    function solution(a,b,c){
+      let answer, maxNumber, sumTwoSides;
+      a < b ? maxNumber = b : maxNumber = a;
+      if (b < c) maxNumber = c;
+      sumTwoSides = a + b + c - maxNumber;
+      sumTwoSides <= maxNumber ? answer="NO" : answer="YES"      
+      return answer;
+    }
+    console.log(solution(6,1,13));
+    console.log(solution(6,7,13));
+    console.log(solution(8,7,13));
+  </script>
+</body>
+</html>
+<!-- 특징:
+  1. 가장 긴 변이 나머지 두 변의 합과 같으면, 두 선은 일직선이다
+  2. 세 변 중 가장 긴 변이, 나머지 두 변의 합보다 작을 때, 삼각형 조건이 성립된다
+-->

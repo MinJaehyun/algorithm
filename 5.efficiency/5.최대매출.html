@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="UTF-8">
+</head>
+
+<body>
+  <script>
+    function solution(arr,n) {
+      let lt, sum, maxNumber = 0;
+
+      for(let rt=0; rt<arr.length; rt++){
+        sum += arr[rt]; // 12, 27, 38
+        if(sum > maxNumber){
+          maxNumber = sum;
+        }
+        while(sum>maxNumber){
+          sum -= arr[lt];
+          lt++;
+          
+        }
+      }
+      
+      console.log(maxNumber);
+    }
+
+    const arr = [12,15,11,20,25,10,20,19,13,15];
+    console.log(solution(arr,3));
+  </script>
+</body>
+
+</html>
