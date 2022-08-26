@@ -1,8 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>odd</title>
 </head>
 <body>
   <script>
@@ -10,28 +8,16 @@
       let minNum = Number.MAX_SAFE_INTEGER;
       let answer = [];
 
-      const oddArr = arr.filter((curr) => {
-        if (curr % 2 === 1) return curr;
-      }).reduce((prev, curr) => {
-        if (minNum > curr) minNum = curr;
-        return prev + curr
+      const oddArr = arr.filter((cur) => {
+         return cur % 2 === 1;
+      }).reduce((prev, cur) => {
+        if (minNum > cur) minNum = cur; return prev + cur;
       }, 0)
       answer.push(oddArr, minNum);
-      // console.log(oddArr);
-      // console.log(minNum);
       return answer;
     }
 
     console.log(solution([12, 77, 38, 41, 53, 92, 85]));
-  </script>  
+  </script>
 </body>
 </html>
-<!-- 
-  1. let minNum = oddArr[0] 는 중간에서 지정해야 하는데, 
-  let minNum = Number.MAX_SAFE_INTEGER 로 지정하면 상단에 지정할 수 있다. 
-
-  2. 최소값은 Number 객체를 활용하여 가져올 수 있다.
-  let minNum = Number.MAX_SAFE_INTEGER;
-
-  3. 
- -->
