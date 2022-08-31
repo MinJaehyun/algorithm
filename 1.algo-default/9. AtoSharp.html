@@ -1,8 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Document</title>
 </head>
 <body>
   <script>
@@ -10,12 +8,10 @@
       const newArr = str.split('');
       let answer = [];
       
-      newArr.map((curr) => {
-        if (curr === characters){
-          answer.push('#');
-        } else {
-          answer.push(curr);
-        }
+      newArr.map((cur) => {
+        cur === characters
+          ? answer.push('#')
+          : answer.push(cur)
       })
       return answer.join('');
     }
@@ -26,3 +22,4 @@
   </script>
 </body>
 </html>
+<!-- 다른 풀이: arr.replace(/A/g, '#') -->

@@ -7,14 +7,18 @@
   <script>
     function solution(str, char){
       const strArr = str.split('');
-      return strArr.filter((curr) => {
-        return curr === char
+      return strArr.filter((cur) => {
+        return cur === char
       }).length;      
     }
 
     const str = 'COMPUTERPROGRAMMING';
-    const char = 'R';
-    console.log(solution(str, char));
+    console.log(solution(str, 'R'));
   </script>  
 </body>
 </html>
+<!-- split 기능? 
+  1. 지정한 구분자를 이용하여 문자열로 나눌 수 있다 
+  2. str.split(A) 특정문자를 입력할 수도 있다
+    - console.log(str.split(char)); // ['COMPUTE', 'P', 'OG', 'AMMING']
+-->
