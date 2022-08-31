@@ -1,16 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Document</title>
 </head>
 <body>
   <script>
     function solution(arr, num){
-      const lastNumber = arr.filter((curr) => {
-        return Number(String(curr).slice(-1)) === num
+      return arr.filter((cur) => {
+        return Number(String(cur).slice(-1)) === num
       }).length;
-      return lastNumber;
     }
 
     const arr = [25,23,11,47,53,17,33,43];
@@ -19,19 +16,4 @@
   </script>  
 </body>
 </html>
-
-<!-- for 문 
-  function solution(arr, num){
-    let count = 0;
-    for(let i=0; i<arr.length; i++){
-      if (Number(String(arr[i]).slice(-1)) === num) {
-        count += 1;
-      }
-    }
-    return count;
-  }
- -->
-
-<!-- 꿀팁
-arr[1] % 10 는 마지막 자릿수만 남길 수 있다!!
--->
+<!-- 팁: arr[1] % 10 으로 마지막 자릿수만 남기기 -->
