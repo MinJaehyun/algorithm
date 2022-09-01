@@ -1,20 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
 <head>
   <meta charset="UTF-8">
 </head>
 <body>
   <script>
-    function solution(arr){
-      const newArr = [...arr];
-      let onlyWord = [];
-      
-      newArr.filter((cur) => {
-        if (!onlyWord.includes(cur)) {
-          onlyWord.push(cur);
-        }
+    function solution(arr){    
+      return onlyWord = arr.filter((cur, i) => {
+        return arr.indexOf(cur) === i
       })
-      return onlyWord;
     }
 
     const arr = ['good', 'time', 'good', 'time', 'student']
@@ -22,4 +15,11 @@
   </script>  
 </body>
 </html>
-<!-- 중복된 단어의 개수? -->
+
+<!-- NOTE 원리: 아래처럼 return 없이 만들거면, filter 사용할 필요가 없다 
+arr.filter((cur, i) => {
+  if (arr.indexOf(cur) === i) {
+    newArr.push(cur);
+  }
+})
+-->
