@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+</head>
+<body>
+  <script>
+    function solution(arr) {
+      let maxNum = Number.MIN_SAFE_INTEGER;
+      let cnt = 0;
+
+      for(let i=0; i<arr.length; i++) { // 8 / 0,1,2,3,4,5,6,7
+        if (arr[i] < arr[i+1]) { // 130<135, 135<148, 148>140, 140<145, 145<150, 150=150, 150<153
+          if (maxNum < arr[i+1]) { // 0<135, 135<148, 148>145, 148<150, 150<153
+            maxNum = arr[i+1]; // 135, 148, 150, 153
+            cnt++; // 1,2,3,4
+          }
+        }
+      }
+      return cnt+1;
+    }
+
+    const arr = [130,135,148,140,145,150,150,153];
+    console.log(solution(arr)); // 5 / 130,135,148,150,153
+  </script>
+</body>
+</html>
+<!-- 
+  1. 비교할 때마다 최고값을 maxNum 에 넣고,
+  2. i < i+1 비교한다
+-->
+
+<!-- 다른 풀이: 굳이 arr[i] 와 arr[i+1] 비교할 필요가 있나? -->
