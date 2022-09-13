@@ -9,23 +9,23 @@
     var foo = function () {
         console.dir(this);
     };
-    foo();                    // window.foo(), 함수 안에 this 는 window 를 가리킨다.
+    foo();                    // window.foo() 이며 window 는 생략 가능하다
 
-    var obj = { foo: foo };   // 앞의 foo 는 선언명칭, 뒤의 foo 는 상단 foo 함수를 가리킨다.
-    obj.foo(); // obj         // foo: function(): void 호출.
+    var obj = { foo: foo };   // 앞 foo 는 선언명칭, 뒤 foo 는 foo 함수를 가리킨다.
+    obj.foo(); // obj         // foo: function(): void 호출, 객체 안의 메서드 안의 this 는 객체를 가리킨다
 
     var obj2 = { foo: 'foo' };
-    console.log(obj2.foo);    // 'foo', 객체값 가져온다
+    console.log(obj2.foo);    // 'foo', 객체의 키를 지정하여 값을 가져온다
 
     // 2. 생성자 함수 호출
-    var instance = new foo(); // instance
-    console.log('instance: ', instance)
+    var instance = new foo(); // instance, 인스턴스로 생성한 함수 안의 this 가 가리키는 것은?
+    console.log('instance: ', instance) // window.instance
 
-    // 3. apply/call/bind 호출
+    // 3. apply, bind, call 호출
     var bar = { name: 'bar' };
-    foo.call(bar);   // bar
+    foo.apply(bar);  // bar, foo 의 this 를 bar 로 가리키도록 설정(apply,bind,call)
     foo.bind(bar)(); // bar
-    foo.apply(bar);  // bar
+    foo.call(bar);   // bar
 </script>
 </body>
 </html>

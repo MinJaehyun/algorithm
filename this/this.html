@@ -3,7 +3,7 @@
   <script>
     // 1.
     function foo() {
-      console.log(this);  // ?
+      console.log('this',this);  // window
     }
     foo();                // 앞에 window.foo() 가 생략됨
 
@@ -12,13 +12,16 @@
       list: [1,2,3],
       foo
     }
-    obj.foo();            // 이 때 foo 는 this 인가? obj 객체인가?
+    // debugger;
+    obj.foo();            // foo 는 this 인가, obj 객체인가?, {list: Array(3), foo: ƒ} 
 
     // 3.
     const obj2 = {
       list: [4,5,6],
     }
-    foo.call(obj2);       // ?, foo 의 this 위치를 obj2 로 지정하는 방법
+    foo.call(obj2);       // {list: Array(3)}, foo 의 this 위치를 obj2 로 지정하는 방법
+
+    console.log('ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ');
 
     // 4.
     const foo2 = {
