@@ -5,30 +5,27 @@
 </head>
 <body>
 <script>
-    // 1. 함수 호출
+    // 1. 함수 호출 및 메소드 호출
     var foo = function () {
         console.dir(this);
     };
-    foo(); // 함수 안에 this 는 window 를 가리킨다.
-    // window.foo();
+    foo();                    // window.foo(), 함수 안에 this 는 window 를 가리킨다.
 
+    var obj = { foo: foo };   // 앞의 foo 는 선언명칭, 뒤의 foo 는 상단 foo 함수를 가리킨다.
+    obj.foo(); // obj         // foo: function(): void 호출.
 
-    // 2. 메소드 호출
-    var obj = { foo: foo };
-    obj.foo(); // obj         // foo: function(): void 를 호출한다.
+    var obj2 = { foo: 'foo' };
+    console.log(obj2.foo);    // 'foo', 객체값 가져온다
 
-    // var obj2 = { foo: 'foo' };
-    // console.log(obj2.foo); // 'foo'      // 객체의 값을 가져온다
-
-    // 3. 생성자 함수 호출
+    // 2. 생성자 함수 호출
     var instance = new foo(); // instance
     console.log('instance: ', instance)
 
-    // 4. apply/call/bind 호출
+    // 3. apply/call/bind 호출
     var bar = { name: 'bar' };
     foo.call(bar);   // bar
-    foo.apply(bar);  // bar
     foo.bind(bar)(); // bar
+    foo.apply(bar);  // bar
 </script>
 </body>
 </html>

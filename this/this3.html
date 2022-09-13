@@ -7,21 +7,26 @@
 <body>
 <script>
     var value = 1;
-    console.log(this); // 선언한 value = 1 는 this.value 로 가져올 수 있다
-
+    console.log('this1',this); 
+    // 전역선언한 value = 1 는 this.value 또는 window.value 로 가져올 수 있다
+    
     var obj = {
         value: 100,
+
         foo: function() {
-            var that = this;              // this 와 that 는 obj 를 가리킨다.
+            // 메서드 안의 this 를 임의변수에 저장하여 지역객체로 사용하는 방법은?
+            // 아래 this 와 that 는 obj 를 가리킨다.
+            var that = this;
 
-            console.log(this);            // obj
-            console.log(this.value);      // 100
-            function bar() {
-                console.log(this);       // window
-                console.log(this.value); // 1
+            console.log('this2',this);    // this === obj
+            console.log(this.value);      // 100, this.value === obj.value
 
-                console.log(that);       // obj
-                console.log(that.value); // 100
+            function bar() {               // 함수 안의 this 는 뭐다? 
+                console.log('this3',this); // window
+                console.log(this.value);   // 1
+
+                console.log('THAT',that);  // obj
+                console.log(that.value);   // 100
             }
             bar();
         }
@@ -35,10 +40,5 @@
 1. obj 의 메서드 foo 안에 this 는 obj 를 가리킨다
 2. 함수안에 this 는 window 를 가리킨다
 -->
-<!-- this 이해하기 - 아래 내용 학습하기
-1. 실행 컨텍스트, 클로져
--->
-
-<!-- NOTE:
-아.. this === window 인지 확인하기!!!
--->
+<!-- this 학습하기: 실행 컨텍스트, 클로져 -->
+<!-- NOTE: 아.. this === window 인지 확인하기! -->

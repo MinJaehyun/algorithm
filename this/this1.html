@@ -6,9 +6,18 @@
 </head>
 <body>
 <script>
+    // 함수 표현식
+    let test = function () {}
+
+    // 함수 선언식
     function square(number) {
-        console.log(arguments); // 파라미터에 담지 못한 모든 인자를 나타낸다.
-        console.log(this);      // 함수의 this 는 window, 전역 객체 안에 Blob 를 포함하고 있다.
+        console.log(arguments); 
+        // 파라미터에 담지 못한 모든 인자를 나타낸다.
+        
+        console.log(this);      
+        // 함수의 this 는 전역 객체인 window 를 가리키며, 
+        // window.square(3) 로 접근할 수 있다. 
+
         return number * number;
     }
     square(2,4,6);
