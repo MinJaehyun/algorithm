@@ -1,24 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
 <head>
   <meta charset="UTF-8">
 </head>
 <body>
   <script>
     function solution(str){
-      if (str.length % 2 === 0) {
-        // 짝수
-        return str.slice((str.length / 2) - 1, (str.length / 2) + 1);
-      } else {
-        // 홀수
-        return str.slice((str.length / 2), (str.length / 2) + 1);
-      }
+      let answer = '';
+      const mid = Math.floor(str.length / 2);
+
+      return answer = str.length % 2 === 0 
+      ? answer = str.slice(mid - 1, mid + 1)
+      : answer = str.slice(mid, mid + 1);
     }
 
-    const str1 = 'stu1234dy'; 
+    const str1 = 'stu1 2 34dy';  
     const str2 = 'g1234d'; 
-    console.log(solution(str1));
-    console.log(solution(str2));
+    console.log('str1:', solution(str1)); // 홀수, 2
+    console.log('str2:', solution(str2)); // 짝수, 2,3
   </script>  
 </body>
 </html>
