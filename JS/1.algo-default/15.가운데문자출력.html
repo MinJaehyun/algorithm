@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+</head>
+<body>
+  <script>
+    function solution(str){
+      let answer = '';
+      const mid = Math.floor(str.length / 2);
+
+      return answer = str.length % 2 === 0 
+      ? answer = str.slice(mid - 1, mid + 1)
+      : answer = str.slice(mid, mid + 1);
+    }
+
+    const str1 = 'stu1 2 34dy';  
+    const str2 = 'g1234d'; 
+    console.log('str1:', solution(str1)); // 홀수, 2
+    console.log('str2:', solution(str2)); // 짝수, 2,3
+  </script>  
+</body>
+</html>

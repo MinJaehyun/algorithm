@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <p>Promise 는 첫 번째 인자로 resolve, 두 번째 인자로 reject 를 입력받는다.</p>
+  <h6>프로미스 3가지 상태
+    <p>Pending(대기) : 비동기 처리 로직이 아직 완료되지 않은 상태</p>
+    <p>Fulfilled(이행) : 비동기 처리가 완료되어 프로미스가 결과 값을 반환해준 상태</p>
+    <p>Rejected(실패) : 비동기 처리가 실패하거나 오류가 발생한 상태</p>
+  </h6>
+  <p>
+    1. new Promise 의 resolve 는 then 이하에 전달되고,
+    2. new Promise 의 reject 는 catch 이하에 전달된다.
+  </p>
+</head>
+
+<body>
+  <script>
+    // 1. 비동기 함수를 동기적으로 사용하기 위한 new Promise 선언.
+    const promise = new Promise((resolve, reject) => {
+      console.log('1');
+      setTimeout(() => {
+        resolve('mjh');
+        reject(new Error('no network'));
+      }, 2000)
+      console.log('2');
+    });
+
+    // 2. resolve,reject 인 콜백함수의 값을 변수에 담아 promise.then(value) 으로 전달하여 사용할 수 있다.
+    // 비동기적 코드를 Promise 안에 작성하고, then(){} 안에서 동기적 처리하면 된다.
+    promise.then(value => {
+      console.log('value3:', value);
+      console.log('4');
+    })
+      .catch(error => {
+        console.log(error);
+      })
+      .finally(() => {
+        console.log('항상 실행되는 finally 함수');
+      });
+  </script>
+</body>
+
+</html>

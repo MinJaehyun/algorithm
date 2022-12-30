@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    const obj = {
+      name: 'mjh',
+      age: 20,
+      gender: 'male'
+    }
+
+    const obj2 = Object.assign({}, obj);
+    obj2.name = 'pms';
+
+    const obj3 = Object.assign({ gender: 'female' }, obj);
+
+    // console.log(obj2);
+    console.log(obj);
+    console.log(obj3);
+  </script>
+</body>
+</html>

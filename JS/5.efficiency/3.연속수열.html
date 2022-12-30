@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="UTF-8">
+</head>
+
+<body>
+  <script>
+    function solution(arr,n) {
+      let [lt, cnt, sum] = [0, 0, 0];
+
+      for(let rt=0; rt<arr.length; rt++) {
+        sum+=arr[rt];
+        if(sum===n) cnt++;
+        while(sum>n){
+          sum-=arr[lt];
+          lt++;
+          if(sum===n) cnt++;
+        }
+      }
+      console.log(cnt);
+    }
+
+    const arr = [1,2,1,3,1,1,1,2];
+    console.log(solution(arr,6));
+  </script>
+</body>
+
+</html>
+<!-- 
+  1. lt 가 0 일 때, rt 는 0 부터 한개씩 증가하여 
+  2. 합이 6 이면 ...
+  3. 합이 7 이상이면 ...
+  4. 합이 7 이하이면 ...
+ -->

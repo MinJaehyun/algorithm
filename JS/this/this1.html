@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<script>
+    // 함수 표현식
+    let test = function () {}
+
+    // 함수 선언식
+    function square(number) {
+        console.log(arguments); 
+        // 파라미터에 담지 못한 모든 인자를 나타낸다.
+        
+        console.log(this);      
+        // 함수 안의 this 는 전역객체 window 를 가리키며, 
+        // 콘솔 창에서 window.square(3) 로 접근할 수 있다. 
+
+        return number * number;
+    }
+    square(2,4,6);
+</script>
+</body>
+</html>

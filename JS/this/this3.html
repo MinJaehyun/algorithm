@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<body>
+<script>
+    var value = 1;
+    console.log('this1',this); 
+    // 전역 value = 1 는 this.value 또는 window.value 로 가져올 수 있다
+    
+    var obj = {
+        value: 100,
+        
+        foo: function() {
+            // NOTE: 메서드(foo:) 안의 this 는 지역객체를 가리킨다
+            var that = this;
+
+            console.log('this2',this);    // this === obj
+            console.log(this.value);      // 100, this.value === obj.value
+
+            function bar() {               // 함수 안의 this 는 뭐다? 전역 객체
+                console.log('this3',this); // window
+                console.log('THAT',that);  // obj, 함수 안의 전역객체인 this 를 지역객체로 사용하기 위해서는? 
+                                           // NOTE: 메서드에 this 를 변수에 담아 사용한다.
+            }
+            bar();
+        }
+    };
+
+    obj.foo();
+</script>
+</body>
+</html>
+<!--
+1. 메서드 안에 this 는 obj 를 가리킨다
+2. 함수안에 this 는 window 를 가리킨다
+-->

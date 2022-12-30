@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<body>
+  <script>
+  function solution(arr = [87, 89, 92, 100, 76]) {
+    const arr_ = arr.map((i) => {
+      return arr.filter((j) => {
+       if(i < j) return j
+      }).length + 1;
+    })
+    console.log(arr_);
+  }
+  solution();
+  </script>
+</body>
+</html>
+<!-- 학습 목표: 
+  1. map 안에 filter 돌리는 방법 아는지?
+  2. filter 처리값은 true, false 아닌, boolean 에 해당하는 숫자가 들어간다
+  3. map 반복하여 새배열 반환하고, filter 로 비교한 값인 숫자를 새배열에 넣고, 길이를 구한다.
+-->
