@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b33a254a-2bb3-427b-a983-80160ea48849" name="Changes" comment="폴더 구조 변경">
-      <change afterPath="$PROJECT_DIR$/DART/lv1/2.copyright.dart" afterDir="false" />
+    <list default="true" id="b33a254a-2bb3-427b-a983-80160ea48849" name="Changes" comment="print start">
+      <change afterPath="$PROJECT_DIR$/DART/section_1/17.remove_duplicate_words.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,15 +53,33 @@
       <recent name="C:\Users\krism\Desktop\DEV\infoAlgorithm\JS" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Dart Command Line App.3.rock_paper_scissors.dart">
     <configuration name="1.mesure_cloud_size.dart" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application" temporary="true" nameIsGenerated="true">
       <option name="filePath" value="$PROJECT_DIR$/DART/lv1/1.mesure_cloud_size.dart" />
       <option name="workingDirectory" value="$PROJECT_DIR$/DART/lv1" />
       <method v="2" />
     </configuration>
+    <configuration name="2.copyright.dart" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application" temporary="true" nameIsGenerated="true">
+      <option name="filePath" value="$PROJECT_DIR$/DART/lv1/2.copyright.dart" />
+      <option name="workingDirectory" value="$PROJECT_DIR$/DART/lv1" />
+      <method v="2" />
+    </configuration>
+    <configuration name="3.rock_paper_scissors.dart" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application" temporary="true" nameIsGenerated="true">
+      <option name="filePath" value="$PROJECT_DIR$/DART/lv1/3.rock_paper_scissors.dart" />
+      <option name="workingDirectory" value="$PROJECT_DIR$/DART/lv1" />
+      <method v="2" />
+    </configuration>
+    <configuration name="5.star.dart" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application" temporary="true" nameIsGenerated="true">
+      <option name="filePath" value="$PROJECT_DIR$/DART/lv1/5.star.dart" />
+      <option name="workingDirectory" value="$PROJECT_DIR$/DART/lv1" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Dart Command Line App.3.rock_paper_scissors.dart" />
+        <item itemvalue="Dart Command Line App.2.copyright.dart" />
         <item itemvalue="Dart Command Line App.1.mesure_cloud_size.dart" />
+        <item itemvalue="Dart Command Line App.5.star.dart" />
       </list>
     </recent_temporary>
   </component>
@@ -80,7 +99,42 @@
       <option name="project" value="LOCAL" />
       <updated>1672370866798</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="폴더 구조 변경">
+      <created>1672910915901</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1672910915901</updated>
+    </task>
+    <task id="LOCAL-00003" summary="폴더 구조 변경">
+      <created>1672987847370</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1672987847370</updated>
+    </task>
+    <task id="LOCAL-00004" summary="파일명 변경">
+      <created>1673238108563</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1673238108563</updated>
+    </task>
+    <task id="LOCAL-00005" summary="수학문제">
+      <created>1673238153532</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1673238153532</updated>
+    </task>
+    <task id="LOCAL-00006" summary="수학문제">
+      <created>1673525335911</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1673525335911</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -96,6 +150,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="폴더 구조 변경" />
-    <option name="LAST_COMMIT_MESSAGE" value="폴더 구조 변경" />
+    <MESSAGE value="파일명 변경" />
+    <MESSAGE value="수학문제" />
+    <option name="LAST_COMMIT_MESSAGE" value="수학문제" />
   </component>
 </project>
