@@ -4,8 +4,12 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b33a254a-2bb3-427b-a983-80160ea48849" name="Changes" comment="단순 파일 이동">
-      <change afterPath="$PROJECT_DIR$/DART/infrun/section_1/17.remove_duplicate_words.dart" afterDir="false" />
+    <list default="true" id="b33a254a-2bb3-427b-a983-80160ea48849" name="Changes" comment="단순 폴더 이동">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DART/lib/infrun/section_1/17.remove_duplicate_words.dart" beforeDir="false" afterPath="$PROJECT_DIR$/DART/lib/infrun/section_1/17.remove_duplicate_words.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DART/lib/infrun/section_1/defaultPage.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/.idea/infoAlgorithm.iml" beforeDir="false" afterPath="$PROJECT_DIR$/JS/.idea/infoAlgorithm.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,45 +42,60 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="RunOnceActivity.cidr.known.project.marker" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
     <property name="cidr.known.project.marker" value="true" />
     <property name="dart.analysis.tool.window.visible" value="false" />
+    <property name="io.flutter.reload.alreadyRun" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="dart.settings" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\krism\Desktop\DEV\infoAlgorithm\DART\lib" />
       <recent name="C:\Users\krism\Desktop\DEV\infoAlgorithm\DART\goorm" />
       <recent name="C:\Users\krism\Desktop\DEV\infoAlgorithm\DART\infrun" />
       <recent name="C:\Users\krism\Desktop\DEV\infoAlgorithm\DART\lv1" />
       <recent name="C:\Users\krism\Desktop\DEV\infoAlgorithm\JS" />
     </key>
   </component>
-  <component name="RunManager" selected="Dart Command Line App.3.rock_paper_scissors.dart">
+  <component name="RunManager" selected="Flutter.17.remove_duplicate_words.dart">
     <configuration name="1.mesure_cloud_size.dart" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application" temporary="true" nameIsGenerated="true">
-      <option name="filePath" value="$PROJECT_DIR$/DART/goorm/lv1/1.mesure_cloud_size.dart" />
-      <option name="workingDirectory" value="$PROJECT_DIR$/DART/goorm/lv1" />
+      <option name="filePath" value="$PROJECT_DIR$/DART/lib/goorm/lv1/1.mesure_cloud_size.dart" />
+      <option name="workingDirectory" value="$PROJECT_DIR$/DART/lib/goorm/lv1" />
       <method v="2" />
     </configuration>
     <configuration name="2.copyright.dart" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application" temporary="true" nameIsGenerated="true">
-      <option name="filePath" value="$PROJECT_DIR$/DART/goorm/lv1/2.copyright.dart" />
-      <option name="workingDirectory" value="$PROJECT_DIR$/DART/goorm/lv1" />
-      <method v="2" />
-    </configuration>
-    <configuration name="3.rock_paper_scissors.dart" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application" temporary="true" nameIsGenerated="true">
-      <option name="filePath" value="$PROJECT_DIR$/DART/goorm/lv1/3.rock_paper_scissors.dart" />
-      <option name="workingDirectory" value="$PROJECT_DIR$/DART/goorm/lv1" />
+      <option name="filePath" value="$PROJECT_DIR$/DART/lib/goorm/lv1/2.copyright.dart" />
+      <option name="workingDirectory" value="$PROJECT_DIR$/DART/lib/goorm/lv1" />
       <method v="2" />
     </configuration>
     <configuration name="5.star.dart" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application" temporary="true" nameIsGenerated="true">
-      <option name="filePath" value="$PROJECT_DIR$/DART/goorm/lv1/5.star.dart" />
+      <option name="filePath" value="$PROJECT_DIR$/DART/lib/goorm/lv1/5.star.dart" />
+      <option name="workingDirectory" value="$PROJECT_DIR$/DART/lib/goorm/lv1" />
+      <method v="2" />
+    </configuration>
+    <configuration name="main.dart" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application" temporary="true" nameIsGenerated="true">
+      <option name="filePath" value="$PROJECT_DIR$/DART/lib/main.dart" />
       <option name="workingDirectory" value="$PROJECT_DIR$/DART/goorm/lv1" />
       <method v="2" />
     </configuration>
+    <configuration name="17.remove_duplicate_words.dart" type="FlutterRunConfigurationType" factoryName="Flutter" temporary="true" nameIsGenerated="true">
+      <option name="filePath" value="$PROJECT_DIR$/DART/lib/infrun/section_1/17.remove_duplicate_words.dart" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Dart Command Line App.1.mesure_cloud_size.dart" />
+      <item itemvalue="Dart Command Line App.2.copyright.dart" />
+      <item itemvalue="Dart Command Line App.main.dart" />
+      <item itemvalue="Dart Command Line App.5.star.dart" />
+      <item itemvalue="Flutter.17.remove_duplicate_words.dart" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Dart Command Line App.3.rock_paper_scissors.dart" />
+        <item itemvalue="Flutter.17.remove_duplicate_words.dart" />
+        <item itemvalue="Dart Command Line App.main.dart" />
         <item itemvalue="Dart Command Line App.2.copyright.dart" />
         <item itemvalue="Dart Command Line App.1.mesure_cloud_size.dart" />
         <item itemvalue="Dart Command Line App.5.star.dart" />
@@ -148,7 +167,35 @@
       <option name="project" value="LOCAL" />
       <updated>1674444568238</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="make flutter project">
+      <created>1674445377866</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1674445377866</updated>
+    </task>
+    <task id="LOCAL-00010" summary="단순 폴더 이동">
+      <created>1674446174993</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1674446174993</updated>
+    </task>
+    <task id="LOCAL-00011" summary="단순 폴더 이동">
+      <created>1674446186733</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1674446186733</updated>
+    </task>
+    <task id="LOCAL-00012" summary="단순 폴더 이동">
+      <created>1674446204507</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1674446204507</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -168,6 +215,8 @@
     <MESSAGE value="수학문제" />
     <MESSAGE value="update README.md" />
     <MESSAGE value="단순 파일 이동" />
-    <option name="LAST_COMMIT_MESSAGE" value="단순 파일 이동" />
+    <MESSAGE value="make flutter project" />
+    <MESSAGE value="단순 폴더 이동" />
+    <option name="LAST_COMMIT_MESSAGE" value="단순 폴더 이동" />
   </component>
 </project>
