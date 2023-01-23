@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b33a254a-2bb3-427b-a983-80160ea48849" name="Changes" comment="단순 파일 이동">
-      <change afterPath="$PROJECT_DIR$/DART/infrun/section_1/17.remove_duplicate_words.dart" afterDir="false" />
+    <list default="true" id="b33a254a-2bb3-427b-a983-80160ea48849" name="Changes" comment="make flutter project">
+      <change afterPath="$PROJECT_DIR$/DART/infrun/section_1/defaultPage.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DART/infrun/section_1/17.remove_duplicate_words.dart" beforeDir="false" afterPath="$PROJECT_DIR$/DART/infrun/section_1/17.remove_duplicate_words.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +55,7 @@
       <recent name="C:\Users\krism\Desktop\DEV\infoAlgorithm\JS" />
     </key>
   </component>
-  <component name="RunManager" selected="Dart Command Line App.3.rock_paper_scissors.dart">
+  <component name="RunManager" selected="Flutter.main.dart">
     <configuration name="1.mesure_cloud_size.dart" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application" temporary="true" nameIsGenerated="true">
       <option name="filePath" value="$PROJECT_DIR$/DART/goorm/lv1/1.mesure_cloud_size.dart" />
       <option name="workingDirectory" value="$PROJECT_DIR$/DART/goorm/lv1" />
@@ -64,19 +66,31 @@
       <option name="workingDirectory" value="$PROJECT_DIR$/DART/goorm/lv1" />
       <method v="2" />
     </configuration>
-    <configuration name="3.rock_paper_scissors.dart" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application" temporary="true" nameIsGenerated="true">
-      <option name="filePath" value="$PROJECT_DIR$/DART/goorm/lv1/3.rock_paper_scissors.dart" />
-      <option name="workingDirectory" value="$PROJECT_DIR$/DART/goorm/lv1" />
-      <method v="2" />
-    </configuration>
     <configuration name="5.star.dart" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application" temporary="true" nameIsGenerated="true">
       <option name="filePath" value="$PROJECT_DIR$/DART/goorm/lv1/5.star.dart" />
       <option name="workingDirectory" value="$PROJECT_DIR$/DART/goorm/lv1" />
       <method v="2" />
     </configuration>
+    <configuration name="main.dart" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application" temporary="true" nameIsGenerated="true">
+      <option name="filePath" value="$PROJECT_DIR$/DART/lib/main.dart" />
+      <option name="workingDirectory" value="$PROJECT_DIR$/DART/goorm/lv1" />
+      <method v="2" />
+    </configuration>
+    <configuration name="main.dart" type="FlutterRunConfigurationType" factoryName="Flutter" temporary="true" nameIsGenerated="true">
+      <option name="filePath" value="$PROJECT_DIR$/DART/lib/main.dart" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Dart Command Line App.1.mesure_cloud_size.dart" />
+      <item itemvalue="Dart Command Line App.2.copyright.dart" />
+      <item itemvalue="Dart Command Line App.main.dart" />
+      <item itemvalue="Dart Command Line App.5.star.dart" />
+      <item itemvalue="Flutter.main.dart" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Dart Command Line App.3.rock_paper_scissors.dart" />
+        <item itemvalue="Flutter.main.dart" />
+        <item itemvalue="Dart Command Line App.main.dart" />
         <item itemvalue="Dart Command Line App.2.copyright.dart" />
         <item itemvalue="Dart Command Line App.1.mesure_cloud_size.dart" />
         <item itemvalue="Dart Command Line App.5.star.dart" />
@@ -148,7 +162,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674444568238</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="make flutter project">
+      <created>1674445377866</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1674445377866</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -168,6 +189,7 @@
     <MESSAGE value="수학문제" />
     <MESSAGE value="update README.md" />
     <MESSAGE value="단순 파일 이동" />
-    <option name="LAST_COMMIT_MESSAGE" value="단순 파일 이동" />
+    <MESSAGE value="make flutter project" />
+    <option name="LAST_COMMIT_MESSAGE" value="make flutter project" />
   </component>
 </project>
