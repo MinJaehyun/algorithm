@@ -1,0 +1,20 @@
+void main() {
+  List<int> numbers = [87, 89, 92, 100, 76]; // [4,3,2,1,5]
+  // List<int> numbers = [89, 92, 100, 76, 87]; // [3,2,1,5,4]
+  
+  List<int> result = [1,1,1,1,1];
+  
+  for(int i=0; i<numbers.length; i++) { 
+    for(int j=0; j<numbers.length; j++) {
+      if(numbers[i]<numbers[j]) { // 87<89
+        result[i]++;
+      } 
+    }
+    
+  }
+  
+  print(result);
+}
+
+// note: 모든 요소를 반복한다 7~8:
+// note: 5: count할 요소를 미리 배열로 지정한다
