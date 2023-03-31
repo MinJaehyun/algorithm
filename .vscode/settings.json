@@ -29,5 +29,8 @@
   "explorer.fileNesting.enabled": true,
   "explorer.fileNesting.expand": false,
   "workbench.startupEditor": "none",
-  "dart.openDevTools": "flutter"
+  "dart.openDevTools": "flutter",
+  "cSpell.words": [
+    "nums"
+  ]
 }
