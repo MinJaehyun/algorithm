@@ -8,7 +8,7 @@ void main() {
   // i=1~4
   for (int i = 1; i <= line; i++) {
     // num pow(num x, num exponent);
-    // note: num 타입의 pow 를 실수로 변환하여 result 에 저장
+    // note: num 타입의 pow 를 정수로 변환하여 result 에 저장
     result += pow(i, 2).toInt();
   }
 
@@ -16,14 +16,15 @@ void main() {
 }
 
 /**
-1. 아래 3가지 차이점은 ? (변환 가능한 종류: 실수, 정수, 문자열)
-int: 실수
-double: 실수(소수)
-num: 정수
-ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
-2. 키워드: int.parse() 와 .toInt() 의 차이점은 ?
- - int.parse() 는 문자열을 정수로 만들고
- - .toInt() 는 실수를 정수(=num)으로 만든다
+1. 숫자형 타입, 정수 타입, 실수 타입의 차이점 ? 
+ - int: 정수
+ - double: 실수(소수)
+ - num: 숫자형
+
+2. int.parse() 와 .toInt() 차이점 ?
+ - int.parse() 는 문자열(String)을 정수(int)로 만들고
+ - .toInt() 는 실수(double)를 정수(int)로 만든다
  
-참고: https://wikidocs.net/168334
+3. 참고: 
+ - https://wikidocs.net/168334
 */
